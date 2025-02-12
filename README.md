@@ -20,7 +20,9 @@ Requirements
 Installation
 ------------
   Install unzip to install the plug-in.
+  ```
   # dnf install unzip
+  ```
 
   Install php-ldap for LDAP connections with php.
   # dnf install php-ldap
