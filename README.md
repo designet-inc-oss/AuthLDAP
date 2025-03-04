@@ -20,23 +20,17 @@ Installation
 ------------
   Install unzip to install the plug-in.
   ```
-  # dnf install unzip
+  # apt-get install unzip
   ```
 
   Install php-ldap for LDAP connections with php.
   ```
-  # dnf install php-ldap
+  # apt-get install php-ldap
   ```
   Adjust the write rights of the plugin directory.
   ```
-  # chown apache:apache /var/www/html/AVideo/plugin && sudo chmod 755 /var/www/html/AVideo/plugin
+  # chown www-data:www-data /var/www/html/AVideo/plugin && chmod 755 /var/www/html/AVideo/plugin
   ```
-  If SELinux is enabled, the file context must be adjusted.
-  ```
-  # semanage fcontext -a -t httpd_sys_rw_content_t /var/www/html/AVideo/plugin
-  # restorecon /var/www/html/AVideo/plugin
-  ```
-
   Upload the AuthLDAP zip file in the plugin settings in the Avideo admin menu.
 
   
